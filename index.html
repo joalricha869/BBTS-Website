@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            BigBoyTaco Studios Website
+        </title>
+        <link id="theme" href="css/index.css" rel="stylesheet" type="text/css">
+        <script>
+            function toggleTheme() {
+                // Obtains an array of all <link>
+                // elements.
+                // Select your element using indexing.
+                var theme = document.getElementsByTagName('link')[0];
+                // Change the value of href attribute 
+                // to change the css sheet.
+                if (theme.getAttribute('href') == 'css/index.css') {
+                    theme.setAttribute('href', 'css/indexDark.css');
+                } else {
+                    theme.setAttribute('href', 'css/index.css');
+                }
+            }
+            function Apply() {
+                window.open("https://docs.google.com/forms/d/e/1FAIpQLSdyemEPovRbxOTL7I-UHOYrGblIZU5K12ZJpXLh6p0DJLUFJQ/viewform?usp=sf_link");
+            }
+        </script>
+    </head>
+    <body>
+        <header id="header">
+            <p>
+                <b>
+                    BigBoyTaco Studios
+                </b>
+            </p>
+        </header>
+        <p class="AboutUs">
+            <br><br>
+            <b>
+                ABOUT US:<br>
+            </b>
+            At BigBoyTaco Studios we aim to create a enjoyable gaming experience.<br>
+            Are you sick of the top AAA games with their various bugs and lazy developers?<br>
+            Well here we are, an indie game studio devoted to our projects.<br>
+            We are always looking for more unity game developers who are determined to create amazing games.<br>
+        </p>
+        <br>
+        <h2>Our Logo</h2>
+        <img src="https://raw.githubusercontent.com/BigBoyTacoStudios/BigBoyTacoStudios.github.io/main/images/Logo.png" alt="Logo" width="426" height="240">
+        <p>It's a masterpiece. (<em>Obviously duh</em>)</p>
+        <h2>Our Team</h2>
+        <img src="https://user-images.githubusercontent.com/83835381/167054849-4b8d9118-1cc3-438d-98b3-10922217707f.png" alt="Team">
+        <p>Again we are always looking for people who can help us!</p>
+        </p>
+        <footer>
+            <p>
+                <b>
+                    APPLY FOR THE TEAM<br>
+                </b>
+                <div>
+                    <div class="buttondiv">
+                        <button class="button button--border-thick button--text-upper button--size-s" onclick="Apply()">Apply</button>
+                    </div>
+                    
+                    <br>
+                    <h1 class="copyright">&copy;2022 BigBoyTaco Studios</h1>
+                </div>
+            </p>
+        </footer>
+
+    </body>
+</html>
